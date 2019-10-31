@@ -1,0 +1,32 @@
+{
+    "name": "crysalead/kahlan",
+    "description": "Behavior-Driven Development (BDD) library.",
+    "keywords": ["Testing", "Unit Test", "Behavior-Driven Development", "TDD", "BDD", "Monkey Patching", "Stub", "Mock"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CrysaLEAD"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "crysalead/jit": "~1.0",
+        "crysalead/box": "~1.0",
+        "crysalead/filter": "~1.1",
+        "crysalead/dir": "~1.0",
+        "crysalead/code": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "kahlan\\": "src/",
+            "kahlan\\spec\\": "spec/"
+        },
+        "files": ["src/init.php"]
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "kahlan\\cli\\Kahlan::composerPostUpdate"
+        ]
+    },
+    "bin": ["bin/kahlan"]
+}

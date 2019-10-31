@@ -1,0 +1,21 @@
+{
+    "name": "crysalead/jit",
+    "description": "Just In Time Code Patcher.",
+    "keywords": ["JIT", "Code Patcher"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "crysalead/kahlan": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "jit\\": "src/",
+            "jit\\spec\\": "spec/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
